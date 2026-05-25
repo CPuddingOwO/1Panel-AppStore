@@ -12,7 +12,7 @@ additionalProperties:
     - Tool
   shortDescZh: 现代化的基于 NTQQ 的 Bot 协议端实现
   shortDescEn: "Modern protocol-side framework based on NTQQ "
-  type: tool
+  type: website
   crossVersionUpdate: true
   limit: 0
   website: https://napneko.github.io/
