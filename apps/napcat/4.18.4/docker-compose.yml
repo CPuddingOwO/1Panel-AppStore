@@ -1,0 +1,24 @@
+services:
+  napcat:
+    environment:
+      - NAPCAT_UID=${UID:-1000}
+      - NAPCAT_GID=${GID:-1000}
+      - MODE=astrbot
+    ports:
+      - ${WEB_PORT}:6099
+      - ${HTTP_PORT}:3000
+      - ${WS_PORT}:3001
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    image: mlikiowa/napcat-docker:v4.18.4
+    volumes:
+      - ./data:/AstrBot/data
+      - ./napcat/config:/app/napcat/config
+      - ./ntqq:/app/.config/QQ
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

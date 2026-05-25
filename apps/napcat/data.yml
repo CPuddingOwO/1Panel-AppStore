@@ -1,0 +1,23 @@
+name: Napcat
+tags:
+  - 实用工具
+title: 现代化的基于 NTQQ 的 Bot 协议端实现
+description:
+  en: "Modern protocol-side framework based on NTQQ "
+  zh: 现代化的基于 NTQQ 的 Bot 协议端实现
+additionalProperties:
+  key: napcat
+  name: Napcat
+  tags:
+    - Tool
+  shortDescZh: 现代化的基于 NTQQ 的 Bot 协议端实现
+  shortDescEn: "Modern protocol-side framework based on NTQQ "
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  website: https://napneko.github.io/
+  github: https://github.com/NapNeko/NapCatQQ
+  document: https://napneko.github.io/
+  architectures:
+    - amd64
+    - arm64

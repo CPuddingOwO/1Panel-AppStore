@@ -1,0 +1,26 @@
+additionalProperties:
+  formFields:
+    - default: "6099"
+      envKey: WEB_PORT
+      required: true
+      type: number
+      labelEn: WebPort
+      labelZh: Web端口
+      edit: true
+      rule: paramPort
+    - default: "3000"
+      envKey: HTTP_PORT
+      required: false
+      type: number
+      labelEn: HTTP Server Port
+      labelZh: HTTP 服务端端口
+      edit: true
+      rule: paramPort
+    - default: "3001"
+      envKey: WS_PORT
+      required: false
+      type: number
+      labelEn: Websocket Server Port
+      labelZh: Websocket Server Port
+      edit: true
+      rule: paramPort
