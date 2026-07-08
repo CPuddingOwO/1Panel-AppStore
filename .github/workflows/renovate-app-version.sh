@@ -16,7 +16,7 @@ do
 
 	# Only apply changes if the format is <image>:<version>
 	if [[ "$image" == *":"* ]]; then
-	  version=$(cut -d ":" -f2- <<< "$image")
+	  version=${image##*:}
 
 	  # Trim the "v" prefix
 	  trimmed_version=${version/#"v"}
