@@ -15,6 +15,7 @@ jobs:
     env:
       RENOVATE_PLATFORM: github
       RENOVATE_REPOSITORIES: ${{ github.repository }}
+      LOG_LEVEL: ${{ vars.LOG_LEVEL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
