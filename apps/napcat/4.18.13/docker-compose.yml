@@ -10,7 +10,7 @@ services:
       - ${WS_PORT}:3001
     container_name: ${CONTAINER_NAME}
     restart: always
-    image: mlikiowa/napcat-docker:v4.18.13
+    image: mlikiowa/napcat-docker:v4.18.14
     volumes:
       - ./data:/AstrBot/data
       - ./napcat/config:/app/napcat/config
