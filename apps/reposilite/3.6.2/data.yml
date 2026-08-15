@@ -1,0 +1,56 @@
+additionalProperties:
+  formFields:
+    - type: number
+      labelZh: HTTP 端口
+      labelEn: HTTP Port
+      label:
+        zh: HTTP 端口
+        zh-hant: HTTP 埠
+        en: HTTP Port
+        ja: HTTPポート
+        ko: HTTP 포트
+        tr: HTTP bağlantı noktası
+      description:
+        zh: Reposilite Web 界面和 Maven 仓库的访问端口
+        en: Access port for Reposilite Web UI and Maven repository
+      required: true
+      envKey: PANEL_APP_PORT_HTTP
+      default: 8080
+      edit: true
+      rule: paramPort
+
+    - type: text
+      labelZh: JVM 内存选项
+      labelEn: JVM Memory Options
+      label:
+        zh: JVM 内存选项
+        zh-hant: JVM 記憶體選項
+        en: JVM Memory Options
+        ja: JVM メモリオプション
+        ko: JVM 메모리 옵션
+        tr: JVM Bellek Seçenekleri
+      description:
+        zh: JVM 启动内存参数，Reposilite 非常轻量，128M 足够一般场景使用
+        en: JVM startup memory options, Reposilite is very lightweight, 128M is enough for most scenarios
+      required: false
+      envKey: JAVA_OPTS
+      default: "-Xmx128M"
+      edit: true
+
+    - type: text
+      labelZh: Reposilite 启动参数
+      labelEn: Reposilite Startup Options
+      label:
+        zh: Reposilite 启动参数
+        zh-hant: Reposilite 啟動參數
+        en: Reposilite Startup Options
+        ja: Reposilite 起動オプション
+        ko: Reposilite 시작 옵션
+        tr: Reposilite Başlangıç Seçenekleri
+      description:
+        zh: "首次启动建议添加 --token admin:secret 创建临时管理员，创建真实 token 后请删除此参数并重启"
+        en: "For first run, add --token admin:secret to create a temp admin. Remove this param and restart after creating a real token"
+      required: false
+      envKey: REPOSILITE_OPTS
+      default: ""
+      edit: true

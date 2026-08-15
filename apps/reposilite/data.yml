@@ -1,0 +1,25 @@
+additionalProperties:
+  key: reposilite
+  name: Reposilite
+  type: tool
+  tags:
+    - Development
+  shortDescZh: 轻量级自托管 Maven 仓库
+  shortDescEn: Lightweight self-hosted Maven repository
+  description:
+    zh: 轻量级自托管 Maven 仓库，支持代理远程仓库、私有仓库和 Web 管理界面
+    zh-hant: 輕量級自託管 Maven 倉庫，支援代理遠端倉庫、私有倉庫和 Web 管理介面
+    en: Lightweight self-hosted Maven repository with proxy, private repo and web UI support
+    ja: プロキシ、プライベートリポジトリ、Web管理インターフェースをサポートする軽量なセルフホスト型 Maven リポジトリ
+    ko: 프록시, 프라이빗 저장소 및 웹 관리 인터페이스를 지원하는 가벼운 자체 호스팅 Maven 저장소
+    tr: Proxy, özel depo ve web yönetim arayüzünü destekleyen hafif kendi kendine barındırılan Maven deposu
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 10
+  website: https://reposilite.com/
+  github: https://github.com/dzikoysk/reposilite
+  document: https://reposilite.com/guide/
+  memoryRequired: 256
+  architectures:
+    - amd64
+    - arm64
