@@ -30,7 +30,6 @@ additionalProperties:
       labelEn: Admin Password
       labelZh: 管理员密码
       edit: true
-      rule: paramComplexity
       random: true
     - default: ""
       envKey: LLDAP_JWT_SECRET
@@ -39,5 +38,4 @@ additionalProperties:
       labelEn: JWT Secret
       labelZh: JWT 密钥
       edit: true
-      rule: paramComplexity
       random: true
