@@ -1,0 +1,25 @@
+name: Light LDAP
+tags:
+  - 实用工具
+  - 安全
+title: 轻量级 LDAP 认证服务器
+description:
+  en: Lightweight LDAP server with a built-in web UI, providing unified accounts and SSO for self-hosted services
+  zh: 轻量级 LDAP 认证服务器，自带 Web 管理界面，为自托管服务提供统一的账号认证与单点登录（SSO）
+additionalProperties:
+  key: lldap
+  name: Light LDAP
+  tags:
+    - Tool
+    - Security
+  shortDescZh: 轻量级 LDAP 认证服务器，带 Web 管理界面，为自托管服务提供统一账号与 SSO
+  shortDescEn: Lightweight LDAP auth server with a web UI for unified accounts and SSO
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/lldap/lldap
+  github: https://github.com/lldap/lldap
+  document: https://github.com/lldap/lldap/blob/main/docs/install.md
+  architectures:
+    - amd64
+    - arm64

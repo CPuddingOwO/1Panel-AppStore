@@ -1,0 +1,22 @@
+services:
+  lldap:
+    image: lldap/lldap:stable
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    ports:
+      - ${PANEL_APP_PORT_LDAP:-3890}:3890
+      - ${PANEL_APP_PORT_HTTP:-17170}:17170
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=${TZ:-Asia/Shanghai}
+      - LLDAP_JWT_SECRET=${LLDAP_JWT_SECRET}
+      - LLDAP_LDAP_BASE_DN=${LLDAP_LDAP_BASE_DN}
+      - LLDAP_LDAP_USER_PASS=${LLDAP_LDAP_USER_PASS}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

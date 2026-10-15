@@ -1,0 +1,43 @@
+additionalProperties:
+  formFields:
+    - default: "3890"
+      envKey: PANEL_APP_PORT_LDAP
+      required: true
+      type: number
+      labelEn: LDAP Port
+      labelZh: LDAP 端口
+      edit: true
+      rule: paramPort
+    - default: "17170"
+      envKey: PANEL_APP_PORT_HTTP
+      required: true
+      type: number
+      labelEn: Web Port
+      labelZh: Web 端口
+      edit: true
+      rule: paramPort
+    - default: dc=example,dc=com
+      envKey: LLDAP_LDAP_BASE_DN
+      required: true
+      type: text
+      labelEn: LDAP Base DN
+      labelZh: LDAP Base DN
+      edit: true
+    - default: ""
+      envKey: LLDAP_LDAP_USER_PASS
+      required: true
+      type: password
+      labelEn: Admin Password
+      labelZh: 管理员密码
+      edit: true
+      rule: paramComplexity
+      random: true
+    - default: ""
+      envKey: LLDAP_JWT_SECRET
+      required: true
+      type: password
+      labelEn: JWT Secret
+      labelZh: JWT 密钥
+      edit: true
+      rule: paramComplexity
+      random: true
