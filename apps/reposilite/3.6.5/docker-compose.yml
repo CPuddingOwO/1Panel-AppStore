@@ -5,7 +5,7 @@ networks:
 services:
   reposilite:
     container_name: ${CONTAINER_NAME}
-    image: dzikoysk/reposilite:3.6.4
+    image: dzikoysk/reposilite:3.6.5
     restart: always
     networks:
       - 1panel-network
